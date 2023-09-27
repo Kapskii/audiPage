@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <a class="logo" href="">
+                <img src="./assets/image/audi-logo-png-730.png" alt="audi-logo">
+            </a>
+            <nav>
+                <ul class="navigate">
+                    <li>
+                        <a class="img-1" href="javascript:l_image('./assets/image/audi-abt-rs6-r-rs6-avant-2020-spetsseriia-universal-rs-6-tfs.jpg')">Audi RS6-R</a>
+                    </li>
+                    <li>
+                        <a class="img-2" href="javascript:l_image('./assets/image/audi-abt-rs7-r-rs7-sportback-2020-sportbek-rs-7.jpg')">Audi RS7-R</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <img class="image" src="./assets/image/audi-abt-rs6-r-rs6-avant-2020-spetsseriia-universal-rs-6-tfs.jpg" name="audi_images" alt="image-audi">
+        </div>
+        <script type="text/javascript">
+            function l_image (a) {document.audi_images.src = a;}
+        </script>
+    </section>
+    <footer>
+        <small>© Designed by Vecheslav Kapskiy</small>
+    </footer>
+</body>
+
+</html>
