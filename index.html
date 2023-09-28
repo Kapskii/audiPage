@@ -18,48 +18,47 @@
     <header>
         <div class="header-wrapper">
             <a class="logo" href="">
-                <img src="./assets/image/audi-logo-png-730.png" alt="audi-logo">
+                <img src="./assets/image/audi-logo.png" alt="audi-logo">
             </a>
             <nav>
                 <ul class="navigate">
                     <li>
-                        <a class="img-1"
-                            href="./assets/image/audi-abt-rs6-r-rs6-avant-2020-spetsseriia-universal-rs-6-tfs.jpg">Audi
-                            RS6-R</a>
+                        <a class="img-1" href="./pageRS6.html">Audi RS6-R</a>
                     </li>
                     <li>
-                        <a class="img-2" href="./assets/image/audi-abt-rs7-r-rs7-sportback-2020-sportbek-rs-7.jpg">Audi
-                            RS7-R</a>
+                        <a class="img-2" href="">Audi RS7-R</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="main">
         <div class="wrapper">
-            <img class="image" src="./assets/image/audi-abt-rs6-r-rs6-avant-2020-spetsseriia-universal-rs-6-tfs.jpg"
-                name="audi_images" alt="image-audi">
-            <div class="information-block">
-                <h2 class="text">Design</h2>
-                <p class="text">
-                    Unlike ABT’s RS7-R that was adorned with an intriguing wrap and a host of red accents,
-                    the design of the Audi RS6-R isn’t quite as loud.
-                    However, it’s still significantly more aggressive than the ‘standard’ RS6.
-                    This is thanks to a host of new visual add-ons including a redesigned front bumper with a
-                    carbon fiber splitter and a pair of sharp canards.
-                </p>
+            <div class="image-wrapper">
+                <img class="image" src="./assets/image/audi-body.jpeg" name="audi_images" alt="image-audi">
+            </div>
+            <h1 class="title">
+                All New Design
+            </h1>
+        </div>
+    </section>
+    <section class="address">
+        <div class="wrapper">
+            <video class="background-video" autoplay loop muted poster="./assets/image/audi-rs6-r.jpg">
+                <source src="./assets/image/videoplayback.mp4" type="video/mp4">
+            </video>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="NAME">
+                    <input type="text" placeholder="LAST NAME">
+                    <input type="email" placeholder="ENTER EMAIL">
+                    <input type="password">
+                    <input type="checkbox">
+                </form>
             </div>
         </div>
-        <script type="text/javascript">
-
-            $('a[class^="img-"]').on('click', function (e) {
-                e.preventDefault();
-                $('img[name="audi_images"]').attr('src', $(this).attr('href'))
-            })
-
-        </script>
     </section>
-    <footer class="footer wrapper-element">
+    <footer class="footer">
         <small>© Designed by Vecheslav Kapskiy</small>
     </footer>
 </body>
