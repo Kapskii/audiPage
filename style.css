@@ -107,6 +107,7 @@ nav li :hover {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 9999;
 }
 
 
