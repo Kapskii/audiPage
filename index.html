@@ -47,13 +47,77 @@
             <video class="background-video" autoplay loop muted poster="./assets/image/audi-rs6-r.jpg">
                 <source src="./assets/image/videoplayback.mp4" type="video/mp4">
             </video>
-            <div class="form">
+            <div class="form-wrapper">
                 <form action="">
-                    <input type="text" placeholder="NAME">
-                    <input type="text" placeholder="LAST NAME">
-                    <input type="email" placeholder="ENTER EMAIL">
-                    <input type="password">
+
+                    <div class="form__row">
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Salutation
+                            </label>
+                            <div class="form-element__wrapper">
+                                <select name="Salutation" id="">
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                </select>
+                            </div>
+                            <div class="form-element__error"></div>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Enter your name
+                            </label>
+                            <div class="form-element__wrapper">
+                                <input name="name" type="text" placeholder="NAME">
+                            </div>
+                            <div class="form-element__error"></div>
+                        </div>
+    
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Enter your surname
+                            </label>
+                            <div class="form-element__wrapper">
+                                <input name="last name" type="text" placeholder="LAST NAME">
+                            </div>
+                            <div class="form-element__error"></div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        
+                    </div>
+
+                    
+
+                    
+
+                    <div class="form-element">
+                        <label class="form-element__label required">
+                            Enter your email
+                        </label>
+                        <div class="form-element__wrapper">
+                            <input name="email" type="email" placeholder="ENTER EMAIL">
+                        </div>
+                        <div class="form-element__error"></div>
+                    </div>
+
+                    <div class="form-element">
+                        <label class="form-element__label required">
+                            Enter password
+                        </label>
+                        <div class="form-element__wrapper">
+                            <input name="password" type="password" placeholder="PASSWORD">
+                        </div>
+                        <div class="form-element__error"></div>
+                    </div>
+
                     <input type="checkbox">
+
+
+                    <button type="submit">SUBMIT</button>
                 </form>
             </div>
         </div>

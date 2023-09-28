@@ -124,12 +124,40 @@ video {
     justify-content: center;
 }
 
-.form {
+.form-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 900px;
     height: 600px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(240, 212, 212, 0.7);
     z-index: 1;
+}
+.form-wrapper form {
+    padding: 50px;
+}
+.form-element__label {
+    position: relative;
+}
+.required::after {
+    content: '*';
+    color: red;
+    right: -10px;
+    position: absolute;
+}
+.form__row {
+    display: flex;
+    gap:10px;
+}
+.form-element__wrapper {
+    width: 100%;
+}
+.form-element {
+    width: 100%;
+}
+.form-element input,
+.form-element select {
+    padding: 5px 10px;
+    width: 100%;
 }
