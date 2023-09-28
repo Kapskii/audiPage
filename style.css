@@ -136,6 +136,7 @@ video {
 }
 .form-wrapper form {
     padding: 50px;
+    
 }
 .form-element__label {
     position: relative;
@@ -148,7 +149,7 @@ video {
 }
 .form__row {
     display: flex;
-    gap:10px;
+    gap:40px;
 }
 .form-element__wrapper {
     width: 100%;
@@ -158,6 +159,11 @@ video {
 }
 .form-element input,
 .form-element select {
+    text-align: center;
     padding: 5px 10px;
+    width: 100%;
+}
+
+.submit {
     width: 100%;
 }
