@@ -7,14 +7,17 @@
 ::-webkit-input-placeholder {
     text-align: center;
 }
+
 :-moz-placeholder {
     /* Firefox 18- */
     text-align: center;
 }
+
 ::-moz-placeholder {
     /* Firefox 19+ */
     text-align: center;
 }
+
 :-ms-input-placeholder {
     text-align: center;
 }
@@ -92,7 +95,6 @@ nav li :hover {
     width: 100%;
     height: calc(100vh - 40px);
     flex-shrink: 0;
-    align-items: flex-start;
     justify-content: center;
 }
 
@@ -102,11 +104,45 @@ nav li :hover {
     height: 100%;
 }
 
+.button_information {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    margin-top: 50vh;
+    margin-left: 60vw;
+}
+
+.button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    margin: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+
+
+
+ .button:hover {
+    background-color: red;
+    box-shadow: 0 0 15px 4px rgba(255, 41, 41, 0.6);
+    color: black;
+}
+
+
+
+
 .title {
     position: absolute;
+    display: block;
     color: white;
     font-size: 100px;
-    margin-top: 70px;
+    margin-top: 10vh;
 }
 
 
@@ -210,13 +246,20 @@ video {
     background-color: black;
     color: white;
     width: 100%;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
+
+
 
 .submit:hover {
     background-color: red;
     box-shadow: 0 0 15px 4px rgba(255, 41, 41, 0.6);
     color: black;
 }
+
+
 
 .form_item {
     padding: 10px;
@@ -231,5 +274,3 @@ video {
 .textarea {
     width: -webkit-fill-available;
 }
-
-
