@@ -4,6 +4,21 @@
     --footer-bg-color: black;
 }
 
+::-webkit-input-placeholder {
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+:-ms-input-placeholder {
+    text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -12,16 +27,22 @@ p {
     margin: 5px;
 }
 
+textarea {
+    resize: none;
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
 li {
     list-style: none;
 }
+
 header {
     height: 60px;
     position: fixed;
@@ -71,8 +92,8 @@ nav li :hover {
     width: 100%;
     height: calc(100vh - 40px);
     flex-shrink: 0;
-    align-items:flex-start;
-    justify-content:center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .image-wrapper {
@@ -128,42 +149,87 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     width: 900px;
     height: 600px;
     background: rgba(240, 212, 212, 0.7);
     z-index: 1;
 }
+
+.title_form {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 80px;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
 .form-wrapper form {
     padding: 50px;
-    
+
 }
+
 .form-element__label {
     position: relative;
 }
+
 .required::after {
     content: '*';
     color: red;
     right: -10px;
     position: absolute;
 }
+
 .form__row {
     display: flex;
-    gap:40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: 700;
+    width: 100%;
 }
+
 .form-element__wrapper {
     width: 100%;
 }
+
 .form-element {
-    width: 100%;
-}
-.form-element input,
-.form-element select {
-    text-align: center;
-    padding: 5px 10px;
     width: 100%;
 }
 
 .submit {
+    padding: 15px;
+    margin: 10px 0;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: inherit;
+    background-color: black;
+    color: white;
     width: 100%;
 }
+
+.submit:hover {
+    background-color: red;
+    box-shadow: 0 0 15px 4px rgba(255, 41, 41, 0.6);
+    color: black;
+}
+
+.form_item {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+    width: 25vw;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.textarea {
+    width: -webkit-fill-available;
+}
+
+

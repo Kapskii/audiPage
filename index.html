@@ -48,78 +48,60 @@
                 <source src="./assets/image/videoplayback.mp4" type="video/mp4">
             </video>
             <div class="form-wrapper">
+                <h1 class="title_form">Leave your review</h1>
                 <form action="">
-
-                    <div class="form__row">
-                        <div class="form-element">
-                            <label class="form-element__label required">
-                                Salutation
-                            </label>
-                            <div class="form-element__wrapper">
-                                <select name="Salutation" id="" required>
-                                    <option value="Mr.">Mr.</option>
-                                    <option value="Mrs.">Mrs.</option>
-                                </select>
-                            </div>
-                            <div class="form-element__error"></div>
-                        </div>
-                    </div>
-
                     <div class="form__row">
                         <div class="form-element">
                             <label class="form-element__label required">
                                 Enter your name
                             </label>
                             <div class="form-element__wrapper">
-                                <input name="name" type="text" placeholder="NAME" required>
+                                <input class="form_item" name="name" type="text" placeholder="NAME" required>
                             </div>
                             <div class="form-element__error"></div>
                         </div>
-
                         <div class="form-element">
                             <label class="form-element__label required">
                                 Enter your surname
                             </label>
                             <div class="form-element__wrapper">
-                                <input name="last name" type="text" placeholder="LAST NAME" required>
+                                <input class="form_item" name="last name" type="text" placeholder="LAST NAME" required>
                             </div>
                             <div class="form-element__error"></div>
                         </div>
                     </div>
                     <div class="form__row">
-
-                    </div>
-
-
-
-                    <div class="form-element">
-                        <label class="form-element__label required">
-                            Enter your email
-                        </label>
-                        <div class="form-element__wrapper">
-                            <input name="email" type="email" placeholder="ENTER EMAIL" required>
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Enter your email
+                            </label>
+                            <div class="form-element__wrapper">
+                                <input class="form_item" name="email" type="email" placeholder="ENTER EMAIL" required>
+                            </div>
+                            <div class="form-element__error"></div>
                         </div>
-                        <div class="form-element__error"></div>
-                    </div>
-
-                    <div class="form-element">
-                        <label class="form-element__label required">
-                            Enter password
-                        </label>
-                        <div class="form-element__wrapper">
-                            <input name="password" type="password" placeholder="PASSWORD" required>
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Enter your phone
+                            </label>
+                            <div class="form-element__wrapper">
+                                <input class="form_item" name="phone" type="tel" placeholder="ENTER PHONE" required>
+                            </div>
+                            <div class="form-element__error"></div>
                         </div>
-                        <div class="form-element__error"></div>
                     </div>
-
-
+                    <div class="form__row">
+                        <div class="form-element">
+                            <label class="form-element__label required">
+                                Enter your message
+                            </label>
+                            <textarea class="form_item textarea" name="message" id="message" cols=""
+                                rows="3" placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
                     <div class="form-element-button">
-                            <button class="submit" type="submit">SUBMIT</button>
+                        <button class="submit" type="submit">SUBMIT</button>
                     </div>
-                    
-
-
-
                 </form>
             </div>
         </div>
