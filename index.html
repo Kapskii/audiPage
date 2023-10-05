@@ -49,7 +49,7 @@
     </section>
     <section class="address">
         <div class="wrapper">
-            <video class="background-video" autoplay loop muted poster="./assets/image/audi-rs6-r.jpg">
+            <video class="background-video" playsinline autoplay autobuffer loop muted poster="./assets/image/audi-rs6-r.jpg">
                 <source src="./assets/image/videoplayback.mp4" type="video/mp4">
             </video>
             <div class="form-wrapper">
@@ -120,8 +120,8 @@
         e.preventDefault();
 
         iziToast.success({
-            title: 'Success',
-            message: 'Your data has been sent',
+            title: 'Success!',
+            message: 'Your message has been sent!',
         });
         $(this)[0].reset()
     })
