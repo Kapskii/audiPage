@@ -127,6 +127,11 @@ nav li :hover {
     transition: .8s cubic-bezier(.165, .84, .44, 1);
 }
 
+.button:hover, .submit:hover {
+    background-color: white;
+    color: black;
+}
+
 .title {
     position: absolute;
     display: block;
